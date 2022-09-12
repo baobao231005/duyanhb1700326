@@ -1,0 +1,358 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+html {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+.clear {
+    clear: both; 
+}
+.text-white {
+    color: #fff !important;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after { /*pseudo element clear*/
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half { 
+    width: 50%;
+}
+
+.col-full { 
+    width: 100%;
+}
+
+
+.header {
+    height: 46px;
+    background-color: #000;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.nav .subnav {
+    list-style-type: none;
+}
+
+.nav > li {
+    display: inline-block; 
+
+} 
+
+.nav li {
+    position: relative;
+}
+.nav > li > a { 
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+.nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px; 
+    display: block; 
+   
+
+}
+
+.nav li:hover .subnav { 
+    display: block;
+}
+
+
+.nav > li:hover > a {
+    color: #000;
+    background-color: #ccc;
+}
+
+.nav .subnav {
+    display: none;
+    min-width: 160px;
+    top: 100%;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+.nav .subnav a { 
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+.nav .subnav li:hover a { 
+    color: #000;
+    background-color: #ccc;
+}
+
+.nav .nav-down {
+    font-size: 14px;
+}
+
+.header .search-btn {
+    float: right; 
+    padding: 0 21px;
+    cursor: pointer;
+}
+.search-btn:hover{
+    background-color: rgb(250, 44, 44);
+}
+.header .search-icon {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 46px;
+ 
+}
+
+/* Background slider */
+#slider {
+    position: relative;
+    margin-top: 46px; 
+    padding-top: 50%;
+    background: url(/CV_Team-project/assets/img/slider/slider2.jpg) bottom center / cover no-repeat;
+}
+
+
+#slider .text-content {
+    position: relative;
+    bottom: 47px; 
+    background-color: #fff;
+    width: 70%;
+    text-align: center;
+    margin-left: 220px; 
+    border-radius: 20px;
+    box-shadow: 0 5px 2px #9b9898;
+   
+    right: 0;
+    left: 0;
+}
+#slider .text-heading {
+    font-weight: 500;
+    color: rgb(214, 21, 21);
+    font-size: 30px;
+    line-height: 30px;
+    align-items: center;
+    padding-top: 15px;
+    font-weight: 500;
+}
+#slider .text-description {
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(219, 46, 46);
+    margin-bottom: 10px;
+
+}
+
+.content {
+    position: relative;
+    margin-top: 50px;
+}
+
+.avatar {
+    display: block;
+    padding: 5px;
+    background-color: DodgerBlue;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 50%;
+  }
+  /*Hiệu ứng zoom*/
+.avatar:hover {
+    transform: scale(1.5);
+  }
+  
+
+.content .content-section {
+    width: 800px;
+    /* padding: 64px 0; */
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-bottom: 80px;
+    
+}
+
+.content .description {
+    font-size: 13px;
+    text-align: center;
+    align-items: center;
+    margin-top: 15px;
+    line-height: 18px;
+}
+
+.content .icon-black {
+    margin-right: 5px;
+}
+
+.content .icon-white {
+    margin-right: 5px;
+    color: #fff;
+}
+
+.content .section-heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic; 
+    opacity: 0.8;
+}
+
+.content .about-text {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify; 
+    line-height: 1.6;
+}
+.content .members-list {
+    margin-top: 48px;
+}
+
+
+.content .member-item {
+    float: left; 
+    width: 33.33333%; 
+    text-align: center; 
+}
+
+.content .member-name {
+    font-size: 15px;
+}
+
+.content .member-img {
+    width: 190px;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+.black-backgroud {
+    background-color: #000;
+    display: grid;
+}
+
+
+
+.cv-btn {
+    display: inline-block;
+    margin-top: 50px;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+}
+
+.cv-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.black-cv-btn {
+    display: inline-block;
+    background-color: #fff;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    font-weight: 500;
+}
+
+.black-cv-btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(121, 117, 117);
+}
+
+
+/* Contact form */
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-info i {
+    width: 30px;
+    display: inline-block;
+}
+
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    
+}
+.form-control-ms {
+    margin-top: 8px;
+}
+
+.contact-form .form-control-send {
+    margin-top: 16px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: 10px 19px;
+    float: right;
+    margin-right: 8px;
+    outline: none;
+}
+
+
+
+/* Footer section */
+.footer {
+    height: 40px;
+    background-color: #000;
+    
+}
+
+.run-letters {
+    font-size: 20px;
+    padding: 8px 0;
+    display: block;
+    background-color: #000000;
+    color: #fff;
+
+}
