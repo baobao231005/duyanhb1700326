@@ -25,8 +25,6 @@ body
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0,0,0,0.1);
     margin: 50px;
-
-
 } 
 
 .Container__Left
@@ -48,7 +46,7 @@ body
 
 
 
-.Imgicon
+.Img-avatar
 {
     position: relative;
     width: 300px;
@@ -57,7 +55,7 @@ body
     overflow: hidden;
 }
 
-.Imgicon img
+.Img-avatar img
 {
     position: absolute;
     top: 0;
@@ -66,6 +64,10 @@ body
     height: 100%;
     object-fit: cover;
 }
+
+.Img-avatar:hover {
+    transform: scale(1.02);
+  }
 
 .Profile h1 
 {
@@ -90,7 +92,7 @@ body
 
 .Contact
 {
-    padding-top: 40px;
+    padding-top: 35px;
 }
 
 .Contact--Title
